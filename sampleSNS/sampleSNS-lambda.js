@@ -19,13 +19,13 @@ exports.handler = function (event, context, callback) {
 		TopicArn: 'arn:aws:sns:us-east-1:480964559519:publisher_topic'
 	}).promise()
 		.then(data => {
-			// your code goes here
+			// your code goes here 
 
 			console.log("Published to topic_um");
 		})
 		.catch(err => {
 			// error handling goes here
-			console.log("Error encounterred ");
+			console.log("Error encounterred ", err);
 		});
 
 
